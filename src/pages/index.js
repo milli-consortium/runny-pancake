@@ -1,12 +1,9 @@
 import * as React from "react"
 //import { Link, useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
-import Container from "../components/container"
-import SEO from "../components/seo"
-
-
 import { Typography, Carousel } from 'antd';
+import { StaticImage } from "gatsby-plugin-image"
+import SEO from "../components/seo"
+import Container from "../components/container"
 import "../components/hero.css"
 
 
