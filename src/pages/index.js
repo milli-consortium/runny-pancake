@@ -1,10 +1,11 @@
 import * as React from "react"
 //import { Link, useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import SEO from "../components/seo"
 import Container from "../components/container"
-import "../components/hero.css"
+import SEO from "../components/seo"
 import { Typography, Carousel } from 'antd';
+import { StaticImage } from "gatsby-plugin-image"
+
+
 
 
 const { Title, Paragraph } = Typography;
@@ -15,7 +16,7 @@ function onChange(a, b, c) {
   console.log(a, b, c);
 }
 
-const IndexPage = ({data}) => {
+const IndexPage = () => {
   /*const data = useStaticQuery(graphql`
     query{
       images: allFile (filter: { extension: { regex: "/(jpg)/" }, sourceInstanceName: {eq: "images"}}){ 
@@ -94,22 +95,6 @@ const IndexPage = ({data}) => {
 }
 
 
-/*export const pageQuery = graphql`
-  query{
-    images: allFile (filter: { extension: { regex: "/(jpg)/" }, sourceInstanceName: {eq: "images"}}){ 
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 4000, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`
-*/
 export default IndexPage
 
 

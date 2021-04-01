@@ -8,19 +8,18 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
+
+import { Layout, Menu, Divider } from 'antd'
 import { Link } from "gatsby"
-import { Layout, 
-         Divider, 
-         Menu } from 'antd'
-import "./layout.css"
+
+
 import {GithubOutlined, 
         MediumCircleFilled, 
         TwitterCircleFilled} from '@ant-design/icons'
+import "../components/layout.css"
 
-const { Header, Footer, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
-
-//import "./layout.css"
 
 const Container = ({ defKey, children }) => {
   /*const data = useStaticQuery(graphql`
@@ -104,18 +103,18 @@ const Container = ({ defKey, children }) => {
                <p style={{fontSize: "20px", fontWeight: "500", marginBottom: "0px" }}>hello@milli.link</p>
              </p>
 
-             <div class="social-links">
+             <div className="social-links">
                <GithubOutlined />
                <MediumCircleFilled />
                <TwitterCircleFilled />
 
              </div>
              
-             <div class="site-info">
-              <span class="copyright">© {new Date().getFullYear()}, All rights reserved. </span>
-              <a class="footer-link" href="https://janastu.org" target="_blank" rel="noopener">
+             <div className="site-info">
+              <span className="copyright">© {new Date().getFullYear()}, All rights reserved. </span>
+              <a className="footer-link" href="https://janastu.org" target="_blank" rel="noreferrer">
                 
-                Made with ❤️
+                Made with <span role="img" aria-label="heart emoji">❤️</span>
                 
               </a>
 
@@ -125,29 +124,7 @@ const Container = ({ defKey, children }) => {
          </Layout>
       </>
       )
-/*  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )*/
+
 }
 
 Container.propTypes = {

@@ -78,6 +78,14 @@ div.ant-typography, .ant-typography p {
 .footer-link:hover {
   color: rgba(0, 0, 0, 0.85);
 }
+
+.ant-carousel .slick-slide img {
+  height: 400px;
+}
+
+.ant-carousel .slick-slide {
+  height: 400px;
+}
 /*a:active,
 a:hover {
   outline-width: 0;
